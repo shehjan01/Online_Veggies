@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    display: flex;
+    background-color: rgb(41, 5, 34);
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+nav a:hover {
+    background-color: white;
+    color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 0 0 auto;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #888;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button.cart {
+    background-color: #f39c12;
+    color: white;
+}
+
+button.buy {
+    background-color: #27ae60;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+header {
+    padding: 40px;
+    background-color: rgb(17, 124, 143);
+    background-attachment: fixed;
+}
+
+section {
+    background-color: rgb(69, 221, 186);
+}
+
+section {
+    text-align: center;
+    height: 100%;
+    padding: 75px 0;
+    min-height: 40vh;
+}
+
+h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    background: scroll;
+}
+
+.product-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+span h2 {
+    background: linear-gradient(to right, #f5d837, #bbb812);
+    padding: 10px 55px;
+    border-radius: 15px;
+    color: white;
+}
+
+p {
+    color: #666;
+    font-size: 1em;
+}
+
+.fruit-panel {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.fruit-image {
+    width: 50px; 
+    margin-right: 10px;
+}
+.fruit-info {
+    flex-grow: 1;
+}
+.fruit-name {
+    font-weight: bold;
+}
+.fruit-price {
+    color: #555;
+}

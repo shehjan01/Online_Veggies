@@ -1,0 +1,436 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+header {
+    padding: 40px;
+    background-color: rgb(17, 124, 143);
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(41, 5, 34);
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+nav a:hover {
+    background-color: white;
+    color: red;
+}
+
+.flex_align {
+    margin-left: auto;
+}
+
+.about {
+    display: flex;
+    padding: 40px;
+    background-color: #000;
+    color: white;
+    align-items: center;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-left img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-right {
+    flex: 2;
+    padding-left: 40px;
+}
+
+.about-right h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-right ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-right ul li {
+    background-color: #1d1d1d;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.vision-mission {
+    display: flex;
+    padding: 40px;
+    background-color: #fff;
+    color: #000;
+}
+
+.vision,
+.mission {
+    flex: 1;
+    padding: 20px;
+}
+
+.vision h3,
+.mission h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.vision p,
+.mission-item p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.mission-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.mission-item img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.btn-learn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(17, 124, 143);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.specialization {
+    background-color: #333;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.specialization h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+}
+
+.value-item {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: #444;
+    border-radius: 5px;
+}
+
+.value-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 1em;
+}
+
+.specialization-img {
+    margin-top: 20px;
+}
+
+.specialization-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+}
+
+.social-media-item {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+}
+
+.carousel-section {
+    background-color: #fff;
+    color: #000;
+    padding: 40px;
+    text-align: center;
+}
+
+.carousel {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-cell {
+    width: 300px;
+    margin-right: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+.carousel-cell img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carousel-cell::before {
+    content: '';
+    display: block;
+    padding-top: 66.66%;
+}
+
+.carousel-cell img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure images cover the cell without stretching */
+}
+
+.carousel-cell img {
+    transition: transform 0.3s ease;
+    /* Smooth zoom effect on hover */
+}
+
+.carousel-cell:hover img {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+h2,
+h3,
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.why-choose-us {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.why-choose-us h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.why-choose-us h3 {
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.why-choose-us .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.why-choose-us .content img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.why-choose-us .features {
+    width: 50%;
+    text-align: left;
+}
+
+.why-choose-us .features .feature {
+    margin-bottom: 15px;
+}
+
+.why-choose-us .features .feature h4 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.why-choose-us .features .feature p {
+    font-size: 16px;
+    color: #555;
+}
+
+.why-choose-us .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.why-choose-us .stats .stat {
+    text-align: center;
+    width: 30%;
+}
+
+.why-choose-us .stats .stat h4 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.why-choose-us .stats .stat p {
+    font-size: 16px;
+    color: #555;
+}
+
+.faq {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.faq h2 {
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.faq h3 {
+    color: #000;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.faq-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.faq-item {
+    width: 48%;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-justify: auto;
+}
+
+.faq-item h4 {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.faq-item p {
+    font-size: 10px;
+    color: #555;
+}
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.subscribe-section {
+    margin-bottom: 30px;
+}
+
+.subscribe-section h2 {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+    max-width: 100%;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a57e8;
+    color: white;
+    cursor: pointer;
+}
+
+.footer .footer-item .btn-link {
+    line-height: 35px;
+    color: rgba(255, 255, 255, .5);
+    transition: 0.5s;
+}
+
+.footer .footer-item .btn-link:hover {
+    color: var(--bs-secondary) !important;
+}
+
+.footer .footer-item p.mb-4 {
+    line-height: 35px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-item {
+        width: 100%;
+    }
+}

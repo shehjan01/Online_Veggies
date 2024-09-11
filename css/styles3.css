@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.about-us-section {
+    background: url('background_2.avif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-us-box {
+    background-color: rgba(173, 127, 255, 0.9);
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.about-us-box h1, .about-us-box h2 {
+    margin-top: 0;
+}
+
+.about-us-box a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.about-us-box a:hover {
+    text-decoration: underline;
+}

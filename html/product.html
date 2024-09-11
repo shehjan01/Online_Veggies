@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="../css/product_style.css">
+</head>
+
+<body>
+    <div class="product-detail-container">
+        <div class="product-image">
+            <!-- Ensure the image path is correct -->
+            <img id="product-image" src="../vaggies/okra-bhindi.jpg" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h1 id="product-name">Best Okra(Bhindi)</h1>
+            <h1 id="product-name">Okra 1 KG</h1>
+            <h2><b>M.R.P 90.00 R.S</b> <i>( ₹25.00/250 g) (Incl. of all taxes)</i></h2>
+            <hr>
+            <h1><b>Deliver to</b></h1>
+            <h2><b>383205</b> <i>Prantij</i></h2>
+            <h2 style="color: rgb(34, 231, 34);">in stock</h2>
+            <h2>| Delivery By Today</h2>
+            <hr>
+            <h1><b>Sold by</b></h1>
+            <h2>Mohammd Shehjan</h2>
+            <hr>
+            <h1>Description</h1>
+            <p>Fresh, and delicious Okra are a summertime favourite. Tomatoes are perfect for sauces and salsas, or
+                try marinating them in herbs and olive oil for an easy appetizer. Enjoy a delicious cup of tomato soup
+                on a lazy afternoon or simply use it as a pizza topping on an exciting evening watching your favourite
+                sports. So, go ahead, buy Tomato online now!</p>
+            <h3>Disclaimer:</h3>
+            <p>Despite our attempts to provide you with the most accurate information possible, the actual packaging,
+                ingredients and colour of the product may sometimes vary. Please read the label, directions and warnings
+                carefully before you buy.</p>
+            <hr>
+            <h1><b>Product Information</b></h1>
+            <h2><i>GENERAL INFORMATION</i></h2>
+            <h3><b>Brand</b> <i>Private Label</i></h3>
+            <h3><b>Manufacturer</b> <i>Private Label</i></h3>
+            <h3><b>Sold By</b> <i>Mohammad Shehjan</i></h3>
+            <button class="add-to-cart" onclick="redirectTo('cart.html')">Add to Cart</button>
+            <button class="Buy-Now" onclick="redirectTo('buy.html')">Buy Now</button>
+        </div>
+    </div>
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        const productImage = getQueryParam('image');
+        if (productImage) {
+            document.getElementById("../vaggies/okra-bhindi.jpg").src = productImage;
+        }
+        document.getElementById('product-name').textContent = getQueryParam('description');
+        // Assuming you have an element with id 'product-description' and 'product-price'
+        document.getElementById('product-description').textContent = `Description: ${getQueryParam('description')}`;
+        document.getElementById('product-price').textContent = `Price: ${getQueryParam('price')}`;
+
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+
+</html>
